@@ -52,6 +52,16 @@ make workspace
 > El contenedor solo puede leer y escribir en la carpeta `proyectos` de este repositorio. Ese será el directorio de
 > trabajo a utilizar.
 
+## Sesiones adicionales del contenedor
+
+Para abrir sesiones extra del contenedor:
+
+```shell
+make workspace-extra
+```
+
+> Solo la sesión creada con `workspace` puede utilizar el puerto del servidor web.
+
 ## Acceso como usuario root al contenedor
 
 Si es necesario, se puede iniciar sesión como `root`:
