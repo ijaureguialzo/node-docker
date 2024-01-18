@@ -6,6 +6,7 @@ help: _header
 	@echo --------------------------
 	@echo build
 	@echo workspace / workspace-root
+	@echo clean
 	@echo --------------------------
 
 _header:
@@ -21,3 +22,6 @@ workspace:
 
 workspace-root:
 	@docker compose run --user root --name node-js-root --rm node /bin/bash
+
+clean:
+	@docker compose down -v --remove-orphans

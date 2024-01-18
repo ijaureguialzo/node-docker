@@ -76,6 +76,15 @@ En Windows:
 copy env-example .env
 ```
 
+## Limpieza
+
+Si no necesitamos más el contenedor y queremos liberar espacio en disco, podemos eliminar todos los datos con el
+comando:
+
+```shell
+make clean
+```
+
 ## Referencias
 
 - [node - Official Image | Docker Hub](https://hub.docker.com/_/node/)

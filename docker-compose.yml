@@ -8,3 +8,9 @@ services:
     hostname: node-js
     volumes:
       - ./proyectos:/proyectos
+      - node_data:/home/node
+      - root_data:/root
+
+volumes:
+  node_data:
+  root_data:
