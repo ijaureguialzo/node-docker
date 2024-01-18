@@ -1,0 +1,10 @@
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NODE_VERSION=${NODE_VERSION:-lts}
+    hostname: node-js
+    volumes:
+      - ./proyectos:/proyectos
