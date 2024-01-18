@@ -1,8 +1,10 @@
 ARG NODE_VERSION
 
-FROM node:${NODE_VERSION}-alpine
+FROM node:${NODE_VERSION}-bookworm
 
-RUN apk update && apk add --no-cache \
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt update && apt install -y \
     bash \
     nano
 
