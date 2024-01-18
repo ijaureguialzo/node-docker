@@ -60,7 +60,7 @@ Si es necesario, se puede iniciar sesión como `root`:
 make workspace-root
 ```
 
-## Configurar la versión de Node.js
+## Configurar la versión de Node.js o el puerto de escucha
 
 Copiar el fichero `env-example` a `.env` y editar su contenido:
 
