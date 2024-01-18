@@ -17,7 +17,7 @@ build:
 	@docker compose build --pull
 
 workspace:
-	@docker compose run --rm node /bin/bash
+	@docker compose run --name node-js --rm node /bin/bash
 
 workspace-root:
-	@docker compose run --user root --rm node /bin/bash
+	@docker compose run --user root --name node-js-root --rm node /bin/bash
