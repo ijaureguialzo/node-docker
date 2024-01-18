@@ -13,7 +13,9 @@ services:
       - ./proyectos:/proyectos
       - node_data:/home/node
       - root_data:/root
+      - local_data:/usr/local
 
 volumes:
   node_data:
   root_data:
+  local_data:
