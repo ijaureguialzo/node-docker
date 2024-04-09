@@ -8,7 +8,8 @@ services:
         - NODE_VERSION=${NODE_VERSION:-lts}
     hostname: node-js
     ports:
-      - "${PORT_HOST:-9001}:${PORT_CONTAINER:-9001}"
+      - "${PORT_DEV:-5173}:${PORT_DEV:-5173}"
+      - "${PORT_PROD:-4173}:${PORT_PROD:-4173}"
     volumes:
       - ./proyectos:/proyectos
       - node_data:/home/node
